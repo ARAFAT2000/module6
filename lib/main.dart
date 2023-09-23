@@ -1,22 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:module6/listbuildernavi/savescreen/nav1.dart';
+import 'package:module6/listbuildernavi/userscreen/userscreen.dart';
 
-import 'assaignment/assaignment.dart';
-import 'livequize/quize.dart';
-
-void main() {
-  runApp(const MyApp());
+void main(){
+  runApp(MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-debugShowCheckedModeBanner: false,
-      home:Assaignment(),
+      home: UserScreen(users: userList),
     );
   }
 }
-
